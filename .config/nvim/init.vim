@@ -7,6 +7,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
+Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'w0rp/ale'
 Plug 'airblade/vim-gitgutter'
 
@@ -30,6 +31,12 @@ set softtabstop=0
 set noexpandtab
 set shiftwidth=4
 " hi Normal guibg=NONE ctermbg=NONE
+
+" cpp enhanced
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_concepts_highlight = 1
 
 " ALE
 let g:ale_sign_column_always = 1
