@@ -10,6 +10,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'w0rp/ale'
 Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdtree'
 
 " Autocomplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -26,11 +27,15 @@ syntax on
 set number
 colorscheme onedark
 set splitbelow
-set tabstop=4
+set expandtab
+set tabstop=8
 set softtabstop=0
-set noexpandtab
-set shiftwidth=4
+set shiftwidth=8
 " hi Normal guibg=NONE ctermbg=NONE
+nnoremap <C-Down> <C-W>j
+nnoremap <C-Up> <C-W>k
+nnoremap <C-Left> <C-W>h
+nnoremap <C-Right> <C-W>l
 
 " cpp enhanced
 let g:cpp_class_scope_highlight = 1
@@ -40,6 +45,9 @@ let g:cpp_concepts_highlight = 1
 
 " ALE
 let g:ale_sign_column_always = 1
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
 
 " Deoplete autocompletion
 set completeopt+=noinsert
