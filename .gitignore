@@ -2,6 +2,7 @@
 !.config/nvim
 !.config/kitty
 !.config/kwinrulesrc
+!.config/tmux
 !.bashrc
 !.tmux-themepack
 !.tmux.conf
