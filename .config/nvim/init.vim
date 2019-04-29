@@ -9,7 +9,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
-Plug 'ervandew/supertab'
+Plug 'Valloric/YouCompleteMe'
 
 " Autocomplete
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -40,16 +40,19 @@ nnoremap <C-Right> <C-W>l
 map <C-n> :NERDTreeToggle<CR>
 
 " Deoplete autocompletion
-"set completeopt+=noinsert
-"set completeopt+=noselect
-"set completeopt-=preview
+set completeopt-=preview
 "let g:deoplete#enable_at_startup = 1
 "inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 "inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-"inoremap <expr> <Up> pumvisible() ? "\<C-e><Up>" : "\<Up>"
-"inoremap <expr> <Down> pumvisible() ? "\<C-e><Down>" : "\<Down>"
+"inoremap <expr> <Up> pumvisible() ? "\<C-y><Up>" : "\<Up>"
+"inoremap <expr> <Down> pumvisible() ? "\<C-y><Down>" : "\<Down>"
 "inoremap <expr> <CR> pumvisible() ? "\<C-y><CR>" : "\<CR>"
 "autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | silent! pclose | endif
+
+" YCM
+"let g:ycm_use_clangd = 0
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_key_list_stop_completion = ['<C-e>']
 
 " tmux
 set ttimeoutlen=0
