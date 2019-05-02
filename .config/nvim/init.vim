@@ -8,7 +8,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'joshdick/onedark.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-surround'
+Plug 'raimondi/delimitmate'
 Plug 'Valloric/YouCompleteMe'
 
 " Autocomplete
